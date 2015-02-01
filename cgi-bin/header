@@ -14,7 +14,7 @@ my $header = <<"HEREDOC";
 	<meta content="ultimate frisbee, beach ultimate, beach ultimate frisbee, san diego ultimate, southern california ultimate frisbee" name="keywords" />
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
-	<link type="text/css" rel="stylesheet" href="style.css" />
+	<link type="text/css" rel="stylesheet" href="/style.css" />
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png">
@@ -50,8 +50,8 @@ my $header = <<"HEREDOC";
 
 
 <div id="topnav">
-	<div class="float-left" id="logodiv"><a href="/"><img src="images/hat_small.png"></a></div>
-	<a href="index.html">home</a>
+	<div class="float-left" id="logodiv"><a href="/"><img src="/images/hat_small.png"></a></div>
+	<a href="/">home</a>
 	<a href="teams.html">teams</a>
 	<a href="format.html">format</a>
 	<a href="schedule.html">schedule</a>

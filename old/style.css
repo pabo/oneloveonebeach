@@ -1,0 +1,117 @@
+body {
+	color: #6611CC;
+	background-color: #ffffff;
+	margin: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#container {
+	padding-left: 315px;
+}
+
+.column {
+	position: relative;
+	float: left;
+}
+
+div#logodiv {
+	right: 315px;
+	width: 315px;
+	margin-left: -100%;
+}
+
+div#topnav {
+	background-color: #66ccff;
+	height: 80px;
+	width: 100%;
+}
+
+.stroked {
+	color: white;
+	text-shadow:
+		/*3px 3px 0 #62449b,*/
+		-1px -1px 0 #62449b,
+		1px -1px 0 #62449b,
+		-1px 1px 0 #62449b,
+		1px 1px 0 #62449b;
+}
+
+div#topnav.stroked a {
+	text-decoration: none;
+	color: white;
+	margin-left: 25px;
+	vertical-align: -30px;
+	font-size: large;
+}
+
+div#leftnav {
+	background-color: #66ccff;
+	position: absolute;
+	top: 380px;
+	left: 0px;
+	width: 130px;
+	height: 100%;
+	padding: 10px 15px 5px 15px;
+	font-size: x-small;
+}
+
+div#content {
+	position: absolute;
+	/*border: 1px solid black;*/
+	top: 100px;
+	left: 180px;
+	width: 700px;
+	height: 400px;
+	padding: 20px;
+}
+
+div#content a[href] {
+	color: #ff6600;
+}
+
+div#contentheader {
+	margin-bottom: 20px;
+}
+
+div#contentheader * {
+	margin: 0px;
+}
+
+div#content ul {
+	margin-bottom: 30px;
+}
+
+div#content p {
+	margin-top: 30px;
+}
+
+div#dates {
+	position: absolute;
+	/*border: 1px solid black;*/
+	top: 190px;
+	left: 0px;
+	width: 130px;
+	height: 100px;
+	padding: 0px 15px 5px 15px;
+        text-align: center;
+}
+
+div#social {
+	position: absolute;
+	top: 430px;
+	left: 38px;
+}
+
+.centered {
+	text-align: center;
+}
+
+.short {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+.highlight {
+	color: red;
+	font-weight: bolder;
+}

@@ -1,0 +1,141 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-image: url("images/Weird-Al-eatit-470x470.png");
+	background-size: 100%;
+}
+
+div#container {
+	height: 100%;
+	width: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+}
+
+div#content {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+	height: 18em;
+
+	text-align: center;
+	margin: auto;
+	width: 70%;
+	background: rgba(0, 0, 0, 0.80);
+	border: 2px solid #AAAAAA;
+	border-radius: 15px;
+	color: #FEF6B5;
+	padding: 10px;
+}
+
+div#logo {
+	font-size: xx-large;
+}
+
+div#lyrics {
+	position: relative;
+}
+
+div#lyrics a {
+	font-size: small;
+	text-decoration: none;
+	color: #FF9E54;
+}
+
+div#lyrics a[href] {
+}
+
+
+div#search{
+	margin: auto;
+	margin-top: 30px;
+	width: 70%;
+}
+
+input#query {
+	width: 100%;
+	font-size: 1.5em; /* twice the div#rating top: */
+}
+
+div#inputContainer {
+	position: relative;
+}
+
+div#rating {
+	position: absolute;
+	top: .75em; /* half the input#query font-size: */
+	right: .75em;
+}
+
+
+div#results {
+	color: black;
+	margin: auto;
+	width: 70%;
+	text-align: left;
+	background-color: #FFFFFF;
+	box-shadow: 3px 3px 20px #888888;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+div.result, div.yelpFooter {
+	position: relative;
+	padding-left: 5px;
+	cursor: default;
+}
+
+div.result.selected {
+	background-color: #8899FF;
+}
+
+div.result span.highlight {
+	color: #0088DD;
+}
+
+div.result img.rating {
+	position: absolute;
+	top: .25em;
+	right: .75em;
+}
+
+div.yelpFooter img.yelpLogo {
+	position: absolute;
+	top: .3em;
+	right: 0px;
+}
+
+/* small screens */
+@media all and (max-width: 568px) {
+
+div#content, div#results, div#search {
+	width: 90%;
+}
+
+div.result, div.yelpFooter {
+	font-size: 1em;
+	padding-top: .1em;
+	padding-bottom: .1em;
+}
+
+input#query {
+	font-size: 1em;
+}
+
+div#rating {
+	top: .5em;
+	right: .25em;
+}
+
+div.result img.rating {
+	right: .25em;
+}
+
+div#lyrics a {
+	font-size: .3em;
+}
+
+}

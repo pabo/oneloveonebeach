@@ -10,7 +10,7 @@ my $header = <<"HEREDOC";
 <head>
 	<title>oneloveonebeach: $title</title>
 
-	<meta content="One Love One Beach, San Diego's 15th annual beach ultimate frisbee tournament, held April 16-17, 2016" name="description" />
+	<meta content="One Love One Beach, San Diego's 14th annual beach ultimate frisbee tournament, held April 18-19, 2015" name="description" />
 	<meta content="ultimate frisbee, beach ultimate, beach ultimate frisbee, san diego ultimate, southern california ultimate frisbee" name="keywords" />
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
@@ -63,7 +63,7 @@ my $header = <<"HEREDOC";
 
 <div id="leftnav">
 	<div id="dates">
-		<h2>April 16-17<br>2016</h2>
+		<h2>April 18-19<br>2015</h2>
 		<h2>San Diego, CA</h2>
 	</div>
 

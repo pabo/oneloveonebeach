@@ -75,6 +75,13 @@ my $header = <<"HEREDOC";
 	</div>
 	<p><br>
 	Questions? <a href="mailto:oneloveonebeach\@gmail.com">Email us</a>.
+
+	<div id="sponsors">
+	<h1>Sponsors:</h1>
+	<div class="sponsor"><a href="http://lls.org"><img src="/images/lls-logo.png"></a></div>
+	<div class="sponsor"><a href="http://sdgrowlers.com"><img src="/images/growler-logo.png"></a></div>
+</div>
+
 </div>
 
 HEREDOC

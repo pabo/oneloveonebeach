@@ -62,6 +62,19 @@ div#dates {
 	margin-bottom: 50px;
 }
 
+div#sponsors{
+	margin-top: 50px;
+}
+
+div.sponsor {
+	margin-bottom: 30px;
+}
+
+div.sponsor img {
+	max-width: 100%;
+	max-height: auto;
+}
+
 div#content {
 	position: absolute;
 	top: 80px;

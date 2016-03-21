@@ -62,15 +62,15 @@ div#dates {
 	margin-bottom: 50px;
 }
 
-div#sponsors{
+div#partners{
 	margin-top: 50px;
 }
 
-div.sponsor {
+div.partner {
 	margin-bottom: 30px;
 }
 
-div.sponsor img {
+div.partner img {
 	max-width: 100%;
 	max-height: auto;
 }

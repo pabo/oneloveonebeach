@@ -58,7 +58,7 @@ my $header = <<"HEREDOC";
 	<a href="fields.html">fields</a>
 	<a href="party.html">party</a>
 	<a href="links.html">links</a>
-	<a href="pickup.html">pickups</a>
+	<a href="pickup.html">pickups/rideshare</a>
 </div>
 
 <div id="leftnav">
@@ -82,6 +82,7 @@ my $header = <<"HEREDOC";
 	<div class="partner"><a href="http://sdgrowlers.com"><img src="/images/growler-logo.png"></a></div>
 	<div class="partner"><a href="http://beachultimate.org"><img src="/images/bula.png"></a></div>
 	<div class="partner"><a href="http://www.primosmex.com"><img src="/images/primos.png"></a></div>
+	<div class="partner"><a href="http://port-a-field.com"><img src="/images/paf-logo.png"></a></div>
 </div>
 
 </div>

@@ -1,6 +1,6 @@
 oneloveonebeach.com
 -------------------
-This is the website for an ultimate frisbee tournament in San Diego.
+This is the website at <http://oneloveonebeach.com> for an ultimate frisbee tournament in San Diego, run by volunteers as a fundraiser for the Leukemia and Lymphoma Society.
 
 Templates
 ---------

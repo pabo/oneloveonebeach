@@ -7,10 +7,12 @@ Templates
 I'm using a super simple templating system - SSI with perl CGI.
 
 Each .html file should start with
+
     <!--#include virtual="cgi-bin/header?title" -->
 where `title` is the page title.
 
 And end with
+
     <!--#include virtual="cgi-bin/footer" -->
 
 Contact

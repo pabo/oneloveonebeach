@@ -1,0 +1,92 @@
+#!/usr/bin/perl
+(my $title = $ENV{QUERY_STRING}) =~ s/\+/ /g;
+$title =~ s/[^a-zA-Z ]//g;
+
+print "Content-type: text/html\n\n";
+my $header = <<"HEREDOC";
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>oneloveonebeach: $title</title>
+
+	<meta content="One Love One Beach, San Diego's 15th annual beach ultimate frisbee tournament, held April 16-17, 2016" name="description" />
+	<meta content="ultimate frisbee, beach ultimate, beach ultimate frisbee, san diego ultimate, southern california ultimate frisbee" name="keywords" />
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+	<link type="text/css" rel="stylesheet" href="/style.css" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/images/icons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/images/icons/android-chrome-manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+<div id="topnav">
+	<div class="float-left" id="logodiv"><a href="/"><img src="/images/hat_small.png"></a></div>
+	<a href="/">home</a>
+	<a href="teams.html">teams</a>
+	<a href="format.html">format</a>
+	<a href="schedule.html">schedule</a>
+	<a href="fields.html">fields</a>
+	<a href="party.html">party</a>
+	<a href="links.html">links</a>
+	<a href="pickup.html">pickups</a>
+</div>
+
+<div id="leftnav">
+	<div id="dates">
+		<h2>April 16-17<br>2016</h2>
+		<h2>San Diego, CA</h2>
+	</div>
+
+	<div id="social">
+		<div><a href="https://twitter.com/OneLoveOneBeach" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow \@OneLoveOneBeach</a></div>
+		<br>
+		<!--<div class="fb-like" data-href="http://www.facebook.com/oneloveonebeach" data-send="false" data-width="100" data-show-faces="true"></div>-->
+		<div class="fb-like" data-href="http://www.facebook.com/oneloveonebeach" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+	</div>
+	<p><br>
+	Questions? <a href="mailto:oneloveonebeach\@gmail.com">Email us</a>.
+
+	<div id="partners">
+	<h1>Partners:</h1>
+	<div class="partner"><a href="http://lls.org"><img src="/images/lls-logo.png"></a></div>
+	<div class="partner"><a href="http://sdgrowlers.com"><img src="/images/growler-logo.png"></a></div>
+	<div class="partner"><a href="http://beachultimate.org"><img src="/images/bula.png"></a></div>
+	<div class="partner"><a href="http://www.primosmex.com"><img src="/images/primos.png"></a></div>
+	<div class="partner"><a href="http://port-a-field.com"><img src="/images/paf-logo.png"></a></div>
+</div>
+
+</div>
+
+HEREDOC
+
+print $header;

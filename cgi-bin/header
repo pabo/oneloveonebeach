@@ -2,6 +2,9 @@
 (my $title = $ENV{QUERY_STRING}) =~ s/\+/ /g;
 $title =~ s/[^a-zA-Z ]//g;
 
+my $dates = 'April 1 - 2';
+my $year = '2017';
+
 print "Content-type: text/html\n\n";
 my $header = <<"HEREDOC";
 
@@ -10,7 +13,7 @@ my $header = <<"HEREDOC";
 <head>
 	<title>oneloveonebeach: $title</title>
 
-	<meta content="One Love One Beach, San Diego's 15th annual beach ultimate frisbee tournament, held April 16-17, 2016" name="description" />
+	<meta content="One Love One Beach, San Diego's 15th annual beach ultimate frisbee tournament, held $dates, $year" name="description" />
 	<meta content="ultimate frisbee, beach ultimate, beach ultimate frisbee, san diego ultimate, southern california ultimate frisbee" name="keywords" />
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
@@ -63,7 +66,7 @@ my $header = <<"HEREDOC";
 
 <div id="leftnav">
 	<div id="dates">
-		<h2>April 16-17<br>2016</h2>
+		<h2>$dates<br>$year</h2>
 		<h2>San Diego, CA</h2>
 	</div>
 
@@ -77,12 +80,12 @@ my $header = <<"HEREDOC";
 	Questions? <a href="mailto:oneloveonebeach\@gmail.com">Email us</a>.
 
 	<div id="partners">
-	<h1>Partners:</h1>
 	<div class="partner"><a href="http://lls.org"><img src="/images/lls-logo.png"></a></div>
 	<div class="partner"><a href="http://sdgrowlers.com"><img src="/images/growler-logo.png"></a></div>
 	<div class="partner"><a href="http://beachultimate.org"><img src="/images/bula.png"></a></div>
-	<div class="partner"><a href="http://www.primosmex.com"><img src="/images/primos.png"></a></div>
-	<div class="partner"><a href="http://port-a-field.com"><img src="/images/paf-logo.png"></a></div>
+	<div class="partner"><a href="http://www.clubjr.com/english.html"><img src="/images/clubjr.jpg"></a></div>
+	<!--<div class="partner"><a href="http://www.primosmex.com"><img src="/images/primos.png"></a></div>-->
+	<!--<div class="partner"><a href="http://port-a-field.com"><img src="/images/paf-logo.png"></a></div>-->
 </div>
 
 </div>
